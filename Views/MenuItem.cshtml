@@ -1,0 +1,45 @@
+﻿@using Orchard.ContentManagement.Aspects
+@{
+    // odd formatting in this file is to cause more attractive results in the output.
+    var items = Enumerable.Cast<dynamic>((System.Collections.IEnumerable)Model);
+}
+@{
+    if (!HasText(Model.Text)) {
+        @DisplayChildren(Model)
+    }
+    else {
+        if ((bool) Model.Selected) {
+            Model.Classes.Add("active");
+        }
+
+        if (items.Any()) {
+            Model.Classes.Add("dropdown");
+            // localize parent item's text.
+            Model.Text = T(Model.Text.ToString()).ToString();
+        }
+
+        @* morphing the shape to keep Model untouched*@
+        Model.Metadata.Alternates.Clear();
+        Model.Metadata.Type = "MenuItemLink";
+
+        @* render the menu item only if it has some content *@
+        var renderedMenuItemLink = Display(Model);
+        if (HasText(renderedMenuItemLink))
+        {
+            if (string.IsNullOrEmpty(Model.Item.Culture) || string.Equals(Model.Item.Culture, WorkContext.CurrentCulture, StringComparison.OrdinalIgnoreCase))
+            {
+                var tag = Tag(Model, "li");
+                @tag.StartElement
+                @renderedMenuItemLink
+
+                if (items.Any())
+                {
+                    <ul class="dropdown-menu">
+                        @DisplayChildren(Model)
+                    </ul>
+                }
+                @tag.EndElement
+            }
+        }
+    }
+}

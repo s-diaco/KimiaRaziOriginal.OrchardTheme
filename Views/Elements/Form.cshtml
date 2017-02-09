@@ -1,0 +1,74 @@
+﻿@using Orchard.ContentManagement
+@using Orchard.DynamicForms.Elements
+@{
+    var contentItem = (ContentItem)Model.ContentItem;
+    var element = (Form)Model.Element;
+    var formName = element.Name;
+    var processedAction = (string)Model.ProcessedAction;
+    var formAction = String.IsNullOrWhiteSpace(processedAction) ? Url.Action("Submit", "Form", new { area = "Orchard.DynamicForms" }) : processedAction;
+    var formMethod = !String.IsNullOrWhiteSpace(element.Method) ? element.Method : "POST";
+
+    if (element.EnableClientValidation == true)
+    {
+        Script.Require("jQuery").AtFoot();
+        Script.Include("Lib.js", "Lib.min.js").AtFoot();
+
+        Html.EnableUnobtrusiveJavaScript();
+        Html.EnableClientValidation();
+    }
+}
+
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Send a Message</h2>
+                <h3 class="section-subheading text-muted">Please send your message here.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form action="@formAction" method="@formMethod" id="contactForm" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div><span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span></div>
+                                @Display(Model.Items[0])
+                                <p class="help-block text-danger"></p>
+                                <!--Please enter your name.-->
+                            </div>
+                            <div class="form-group">
+                                <div><span class="field-validation-valid text-danger" data-valmsg-for="Name" data-valmsg-replace="true"></span></div>
+                                @Display(Model.Items[1])
+                                <p class="help-block text-danger"></p>
+                                <!--Please enter your email address.-->
+                            </div>
+                            <div class="form-group">
+                                <div><span class="field-validation-valid text-danger" data-valmsg-for="Phone" data-valmsg-replace="true"></span></div>
+                                @Display(Model.Items[2])
+                                <p class="help-block text-danger"></p>
+                                <!--Please enter your phone number.-->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div><span class="field-validation-valid text-danger" data-valmsg-for="Message" data-valmsg-replace="true"></span></div>
+                                @Display(Model.Items[3])
+                                <p class="help-block text-danger"></p>
+                                <!--Please enter a message.-->
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center">@Display(Model.Items[4])</div>
+                    </div>
+                    <input type="hidden" name="formName" value="@formName" />
+                    <input type="hidden" name="contentId" value="@contentItem.Id" />
+                    @Html.AntiForgeryToken()
+                </form>
+            </div>
+        </div>
+    </div> 
+</section>
+<!-- End of Contact Section -->

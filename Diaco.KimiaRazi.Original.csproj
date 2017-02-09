@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E51C8F4-EF3A-457C-8A58-4078532EBD0F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Diaco.KimiaRazi.Original</RootNamespace>
+    <AssemblyName>Diaco.KimiaRazi.Original</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\..\OrchardBasicCorrectness.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets.json" />
+    <Content Include="Assets\Styles.less" />
+    <Content Include="Content\favicon.ico" />
+    <Content Include="Content\toastr.css" />
+    <Content Include="Content\toastr.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Images\About\1360.jpg" />
+    <Content Include="Content\Images\About\1378.jpg" />
+    <Content Include="Content\Images\About\1380.jpg" />
+    <Content Include="Content\Images\About\1381.jpg" />
+    <Content Include="Content\Images\About\1382.jpg" />
+    <Content Include="Content\Images\About\1384.jpg" />
+    <Content Include="Content\Images\About\1392.jpg" />
+    <Content Include="Content\Images\About\1394.jpg" />
+    <Content Include="Content\Images\article\frit1.jpg" />
+    <Content Include="Content\Images\article\frit2.jpg" />
+    <Content Include="Content\Images\article\glaze.jpg" />
+    <Content Include="Content\Images\article\ink.jpg" />
+    <Content Include="Content\Images\article\kimiarazi-1.jpg" />
+    <Content Include="Content\Images\article\metallic-third-firing.jpg" />
+    <Content Include="Content\Images\article\special-glaze.jpg" />
+    <Content Include="Content\Images\Contact\map-image.jpg" />
+    <Content Include="Content\Images\Contact\map-image.png" />
+    <Content Include="Content\Images\HomeSlideShow\slide00.jpg" />
+    <Content Include="Content\Images\HomeSlideShow\slide01.jpg" />
+    <Content Include="Content\Images\HomeSlideShow\slide03.jpg" />
+    <Content Include="Content\Images\home\contemp.jpg" />
+    <Content Include="Content\Images\home\home-frit.jpg" />
+    <Content Include="Content\Images\home\home-glaze.jpg" />
+    <Content Include="Content\Images\home\home-ink.jpg" />
+    <Content Include="Content\Images\home\home-third.jpg" />
+    <Content Include="Content\Images\home\home.jpg" />
+    <Content Include="Content\Images\home\intro-bg.jpg" />
+    <Content Include="Content\Images\Portfolio\1.jpg" />
+    <Content Include="Content\Images\Portfolio\2.jpg" />
+    <Content Include="Content\Images\Portfolio\3.jpg" />
+    <Content Include="Content\Images\Portfolio\4.jpg" />
+    <Content Include="Content\Images\Portfolio\5.jpg" />
+    <Content Include="Content\Images\Portfolio\6.jpg" />
+    <Content Include="Content\Images\Portfolio\7.jpg" />
+    <Content Include="Content\Images\Portfolio\8.jpg" />
+    <Content Include="Content\Images\Portfolio\cont.jpg" />
+    <Content Include="Content\Images\Portfolio\engobe-big.jpg" />
+    <Content Include="Content\Images\Portfolio\engobe-frit-big.jpg" />
+    <Content Include="Content\Images\Portfolio\engobe-frit.jpg" />
+    <Content Include="Content\Images\Portfolio\engobe.jpg" />
+    <Content Include="Content\Images\Portfolio\heating-microscope.jpg" />
+    <Content Include="Content\Images\Portfolio\icp-aes.jpg" />
+    <Content Include="Content\Images\Portfolio\itech.jpg" />
+    <Content Include="Content\Images\Portfolio\matt-frit-big.jpg" />
+    <Content Include="Content\Images\Portfolio\matt-frit.jpg" />
+    <Content Include="Content\Images\Portfolio\matt-glaze-big.jpg" />
+    <Content Include="Content\Images\Portfolio\matt-glaze.jpg" />
+    <Content Include="Content\Images\Portfolio\opaque-frit-big.jpg" />
+    <Content Include="Content\Images\Portfolio\opaque-frit.jpg" />
+    <Content Include="Content\Images\Portfolio\opaque-glaze-big.jpg" />
+    <Content Include="Content\Images\Portfolio\opaque-glaze.jpg" />
+    <Content Include="Content\Images\Portfolio\plotter.jpg" />
+    <Content Include="Content\Images\Portfolio\powder-luster-big.jpg" />
+    <Content Include="Content\Images\Portfolio\powder-luster-small.jpg" />
+    <Content Include="Content\Images\Portfolio\powder-matt-big.jpg" />
+    <Content Include="Content\Images\Portfolio\powder-matt-small.jpg" />
+    <Content Include="Content\Images\Portfolio\powder-opaque-big.jpg" />
+    <Content Include="Content\Images\Portfolio\powder-opaque-small.jpg" />
+    <Content Include="Content\Images\Portfolio\powder-reactive-big.jpg" />
+    <Content Include="Content\Images\Portfolio\powder-reactive-small.jpg" />
+    <Content Include="Content\Images\Portfolio\powder-transparent-big.jpg" />
+    <Content Include="Content\Images\Portfolio\powder-transparent-small.jpg" />
+    <Content Include="Content\Images\Portfolio\ProductDetail-s.png" />
+    <Content Include="Content\Images\Portfolio\ProductDetail.png" />
+    <Content Include="Content\Images\Portfolio\rot.jpg" />
+    <Content Include="Content\Images\Portfolio\services-placeholder-big.jpg" />
+    <Content Include="Content\Images\Portfolio\services-placeholder.jpg" />
+    <Content Include="Content\Images\Portfolio\table.jpg" />
+    <Content Include="Content\Images\Portfolio\temp.jpg" />
+    <Content Include="Content\Images\Portfolio\test.jpg" />
+    <Content Include="Content\Images\Portfolio\trans-frit-big.jpg" />
+    <Content Include="Content\Images\Portfolio\trans-frit.jpg" />
+    <Content Include="Content\Images\Portfolio\vetrosa-crackle.jpg" />
+    <Content Include="Content\Images\Portfolio\vetrosa-metallic.jpg" />
+    <Content Include="Content\Images\Portfolio\vetrosa-placeholder.jpg" />
+    <Content Include="Content\Images\Portfolio\vetrosa-protection.jpg" />
+    <Content Include="Content\Images\Portfolio\vetrosa-sparkle.jpg" />
+    <Content Include="Content\Images\Portfolio\vetrosa-transparent.jpg" />
+    <Content Include="Content\Images\Shared\1122707.png" />
+    <Content Include="Content\Images\Shared\error.jpg" />
+    <Content Include="Content\Images\Shared\header-bg.jpg" />
+    <Content Include="Content\Images\Shared\header-bg2.jpg" />
+    <Content Include="Content\Images\Shared\header-bg3.jpg" />
+    <Content Include="Content\Images\Shared\header-bg4.jpg" />
+    <Content Include="Content\Images\Shared\header-bg5.jpg" />
+    <Content Include="Content\Images\Shared\header-bg6.jpg" />
+    <Content Include="Content\Images\Shared\header-bg7.jpg" />
+    <Content Include="Content\Images\Shared\header-bg8.jpg" />
+    <Content Include="Content\Images\Shared\header-bg9.jpg" />
+    <Content Include="Content\Images\Shared\intro.png" />
+    <Content Include="Content\Images\Shared\logo 2line.png" />
+    <Content Include="Content\Images\Shared\logo-header-md.png" />
+    <Content Include="Content\Images\Shared\logo-header-sm.png" />
+    <Content Include="Content\Images\Shared\logo-text.png" />
+    <Content Include="Content\Images\Shared\logo.png" />
+    <Content Include="Content\Images\Shared\services-bg.jpg" />
+    <Content Include="Content\Images\Shared\spacer.png" />
+    <Content Include="Content\toastr.scss" />
+    <Content Include="Content\toastr.less" />
+    <None Include="less\kimiarazi-rtl.less" />
+    <Content Include="Scripts\agency.js" />
+    <Content Include="Scripts\cbpAnimatedHeader.js" />
+    <Content Include="Scripts\cbpAnimatedHeader.min.js" />
+    <Content Include="Scripts\classie.js" />
+    <Content Include="Scripts\contact_me.js" />
+    <None Include="Scripts\jquery-1.6.3-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.3.js" />
+    <Content Include="Scripts\jquery-1.6.3.min.js" />
+    <Content Include="Scripts\Lib.js" />
+    <Content Include="Scripts\Lib.min.js" />
+    <Content Include="Scripts\messages.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Styles\agency.css" />
+    <Content Include="Styles\animate.min.css" />
+    <Content Include="Styles\grayscale.css" />
+    <Content Include="Scripts\grayscale.js" />
+    <Content Include="Scripts\init.js" />
+    <Content Include="Scripts\jqBootstrapValidation.js" />
+    <Content Include="Scripts\jquery-1.12.4.js" />
+    <Content Include="Scripts\jquery-1.12.4.min.js" />
+    <Content Include="Scripts\jquery.backstretch.min.js" />
+    <Content Include="Scripts\jquery.easing.min.js" />
+    <Content Include="Scripts\jquery.parallax.js" />
+    <Content Include="Scripts\jquery.smartmenus.bootstrap.min.js" />
+    <Content Include="Scripts\jquery.smartmenus.min.js" />
+    <Content Include="fonts\Web.config" />
+    <Content Include="packages.config" />
+    <Content Include="App_Data\Localization\fa-IR\orchard.theme.po" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jquery.viewportchecker.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\ticker00.js" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="Styles\animate.css" />
+    <Content Include="Styles\kimiarazi-rtl.css" />
+    <Content Include="Styles\kimiarazi.css" />
+    <Content Include="Styles\stylish-portfolio.css" />
+    <Content Include="Styles\toastr.css" />
+    <Content Include="Styles\toastr.min.css" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\Web.config" />
+    <Content Include="Styles\Web.config" />
+    <Content Include="Content\Web.config" />
+    <Content Include="Theme.txt" />
+    <Content Include="Theme.png" />
+    <Content Include="Placement.info" />
+    <Content Include="Views\Layout.cshtml" />
+    <Content Include="Views\Items\Content-DiacoTestType.cshtml" />
+    <Content Include="Views\Wrapper.HtmlContent.cshtml" />
+    <Content Include="Views\Content-KimiaRaziProduct.Summary.cshtml" />
+    <Content Include="Views\Content-KimiaRaziArticle.Detail.cshtml" />
+    <Content Include="Views\Content-KimiaRaziFeature.cshtml" />
+    <Content Include="Views\Layout-FirstPage.cshtml" />
+    <Content Include="Views\Menu.cshtml" />
+    <Content Include="Views\Content.cshtml" />
+    <Content Include="Views\Document.cshtml" />
+    <Content Include="Views\Zone.cshtml" />
+    <Content Include="Views\Widget.Wrapper.cshtml" />
+    <Content Include="Views\Parts.Layout.cshtml" />
+    <Content Include="Views\MenuItem.cshtml" />
+    <Content Include="Views\MenuItemLink.cshtml" />
+    <Content Include="Views\Parts.Layout-Page.cshtml" />
+    <Content Include="Views\BadgeOfHonor.cshtml" />
+    <Content Include="Views\Elements\Form.cshtml" />
+    <Content Include="Views\Elements\TextField.cshtml" />
+    <Content Include="Views\Elements\TextArea.cshtml" />
+    <Content Include="Views\Elements\EmailField.cshtml" />
+    <Content Include="Views\Items\FormElement.Wrapper.cshtml" />
+    <Content Include="Views\Elements\Button.cshtml" />
+    <Content Include="Views\Elements\ContentItem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
+      <Project>{2D1D92BB-4555-4CBE-8D0E-63563D6CE4C6}</Project>
+      <Name>Orchard.Framework</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Orchard.Core.csproj">
+      <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
+      <Name>Orchard.Core</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Modules\Orchard.DynamicForms\Orchard.DynamicForms.csproj">
+      <Project>{82190f52-2901-46d6-8a4c-34649959483f}</Project>
+      <Name>Orchard.DynamicForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Modules\Orchard.Layouts\Orchard.Layouts.csproj">
+      <Project>{6bd8b2fa-f2e3-4ac8-a4c3-2925a653889a}</Project>
+      <Name>Orchard.Layouts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Modules\Orchard.Tokens\Orchard.Tokens.csproj">
+      <Project>{6f759635-13d7-4e94-bcc9-80445d63f117}</Project>
+      <Name>Orchard.Tokens</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\IRANSans-web.eot" />
+    <Content Include="fonts\IRANSans-web.ttf" />
+    <Content Include="fonts\IRANSans-web.woff" />
+    <Content Include="fonts\IRANSans-web.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ResourceManifest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\contents\" />
+    <Folder Include="Views\DisplayTemplates\Parts\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" DependsOnTargets="AfterBuildCompiler">
+    <PropertyGroup>
+      <AreasManifestDir>$(ProjectDir)\..\Manifests</AreasManifestDir>
+    </PropertyGroup>
+    <!-- If this is an area child project, uncomment the following line:
+    <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Child" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
+    -->
+    <!-- If this is an area parent project, uncomment the following lines:
+    <CreateAreaManifest AreaName="$(AssemblyName)" AreaType="Parent" AreaPath="$(ProjectDir)" ManifestPath="$(AreasManifestDir)" ContentFiles="@(Content)" />
+    <CopyAreaManifests ManifestPath="$(AreasManifestDir)" CrossCopy="false" RenameViews="true" />
+    -->
+  </Target>
+  <Target Name="AfterBuildCompiler" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>45979</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://orchard.codeplex.com</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

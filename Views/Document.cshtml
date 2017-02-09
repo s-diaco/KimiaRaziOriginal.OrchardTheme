@@ -1,0 +1,39 @@
+﻿@using Orchard.Localization
+@using Orchard.Mvc.Html;
+@using Orchard.UI.Resources;
+@{
+    RegisterLink(new LinkEntry {Type = "image/x-icon", Rel = "shortcut icon", Href = Url.Content("~/Themes/Diaco.KimiaRazi.Original/Content/favicon.ico") });
+    Script.Include("https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.min.js").AtHead().UseCondition("lt ie 9");
+    Script.Include("https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js").AtHead().UseCondition("lt ie 9");
+    string title = Convert.ToString(Model.Title);
+    string siteName = Convert.ToString(WorkContext.CurrentSite.SiteName);
+    bool isRtl = WorkContext.CurrentCultureInfo().TextInfo.IsRightToLeft;
+    Html.AddPageClassNames("dir-" + (isRtl ? "rtl" : "ltr"));
+}
+<!DOCTYPE html> 
+<html lang="@WorkContext.CurrentCulture" class="static @Html.ClassForPage()" dir="@(isRtl?"rtl":"ltr")"> 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    @* SEO Meta tags *@
+    <meta name="author" content=@T("KimiaRazi")>
+    <meta name="description" content="todo: Kimiarazi description" />
+    <meta name="keywords" content="todo: Keywords" />
+    <meta property="og:title" content="todo: Social link" />
+    <meta property="og:image" content="todo: Social image" />
+    <meta property="og:description" content="todo: social desc" />
+    @* todo: add other social network meta tags.*@    
+    @* End SEO Meta tags *@
+
+    <meta charset="utf-8" />
+    <title>@Html.Title(title, T(siteName).ToString())</title> 
+    @Display(Model.Head)
+    <script>(function(d){d.className="dyn"+d.className.substring(6,d.className.length);})(document.documentElement);</script> 
+    <script>window.isRTL = @(isRtl.ToString().ToLowerInvariant());</script>
+</head> 
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+@* Layout (template) is in the Body zone @ the default position (nothing, zero, zilch) *@
+@Display(Model.Body)
+@Display(Model.Tail)
+</body>
+</html>

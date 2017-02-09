@@ -1,0 +1,30 @@
+<Placement>
+  <!-- Customize where the shapes are rendered -->
+
+  <!-- 
+  <Match DisplayType="Summary">
+    <Place Parts_Title_Summary="-"/>
+    <Place Parts_Common_Metadata_Summary="-"/>
+  </Match>
+-->
+  <Match ContentType="KimiaRaziProduct">
+    <Match DisplayType="Summary">
+	    <Place Parts_Title="HomeProductTitle:0"/>
+	    <Place Fields_Common_Text__KimiaRaziProduct__Subtitle="HomeProductSubtitle:0"/>
+	    <Place Fields_MediaLibraryPicker="HomeProductThumbnail:0"/>
+    </Match>
+  </Match>
+  <Match ContentType="KimiaRaziArticle">
+    <Place Parts_Common_Metadata="-"/>
+    <Place Parts_Tags_ShowTags="-"/>
+  </Match>
+  <Match ContentType="KimiaRaziFeature">
+      <Place Parts_Common_Body="HomeFeatureBody:0"/>
+  </Match>
+  <Match ContentType="KimiaRaziArticle">
+      <Place Parts_Common_Body="HomeAboutBody:0"/>
+  </Match>
+  <Match DisplayType="Detail">
+    <Place Parts_Localization_ContentTranslations="-"/>
+  </Match>
+</Placement>

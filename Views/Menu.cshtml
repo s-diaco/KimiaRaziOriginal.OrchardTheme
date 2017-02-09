@@ -1,0 +1,64 @@
+﻿@using Orchard.Utility.Extensions;
+@using Orchard.ContentManagement;
+@using Orchard.Localization.Models;
+@{
+        string currentCulture = WorkContext.CurrentCulture;
+        ContentItem currentContentItem = WorkContext.GetState<ContentItem>("currentContentItem");
+        // Model is Model.Menu from the layout (Layout.Menu)
+        Model.Classes.Add("navbar-nav");
+        Model.Classes.Add("nav");
+        var tag = Tag(Model, "ul");
+
+        var items = (IList<dynamic>)Enumerable.Cast<dynamic>(Model.Items);
+
+        if (items.Any())
+        {
+            items[0].Classes.Add("first");
+            items[items.Count - 1].Classes.Add("last");
+        }
+
+        LocalizationPart currentLocalizedItem = currentContentItem.As<LocalizationPart>();
+        IEnumerable<LocalizationPart> localizations = WorkContext.GetState<IEnumerable<LocalizationPart>>("currentContentLocalizations");
+
+        // set homepage based on culture
+        string home = string.Equals(WorkContext.CurrentCulture, "fa-IR", StringComparison.OrdinalIgnoreCase) ? "fa-IR/Home/Index" : "";
+    }
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href='~/@home'>
+                <img class="logo-icon" src="~/Media/Default/Images/Shared/logo.png" alt="logo" />@T("KimiaRazi")
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="bs-example-navbar-collapse-1">
+            @tag.StartElement
+            @* see MenuItem shape template *@
+            @DisplayChildren(Model)
+            <!-- lang selector-->
+            @if (currentLocalizedItem != null && localizations != null && localizations.Count() > 0)
+            {
+                <li class="lang-bar">
+                    <span> <a class="taglib-icon" href="@Url.ItemDisplayUrl(currentLocalizedItem)" id="@currentLocalizedItem.Culture.Culture" lang="@currentLocalizedItem.Culture.Culture"> <img class="lang-icon" src="~/Themes/Diaco.KimiaRazi.Original/Content/Images/Shared/spacer.png" alt="@currentLocalizedItem.Culture.Culture" title="@currentLocalizedItem.Culture.Culture"> </a> </span>
+                    @foreach (LocalizationPart i in localizations)
+                    {
+                        <span> <a class="taglib-icon" href="@Url.ItemDisplayUrl(i)" id="@i.Culture.Culture" lang="@i.Culture.Culture"> <img class="lang-icon" src="~/Themes/Diaco.KimiaRazi.Original/Content/Images/Shared/spacer.png" alt="@i.Culture.Culture" title="@i.Culture.Culture"> </a> </span>
+                    }
+                </li>
+            }
+            @tag.EndElement
+        </div>
+        <!-- /.navbar-collapse -->
+
+    </div>
+    <!-- /.container-fluid -->
+
+</nav>

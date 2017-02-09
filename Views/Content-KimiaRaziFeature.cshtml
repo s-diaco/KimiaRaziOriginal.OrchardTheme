@@ -1,0 +1,18 @@
+﻿@using Orchard.Utility.Extensions;
+
+@{
+    var title = Model.ContentItem.TitlePart.Title != null ? Model.ContentItem.TitlePart.Title : string.Empty;
+}
+<div class="service-item">
+    <span class="fa-stack fa-4x">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-graduation-cap fa-stack-1x text-primary"></i>
+    </span>
+    <h4>
+        <strong>@title</strong>
+    </h4>
+    @if(Model.ContentItem.BodyPart!=null)
+    {
+        @Display(Model.HomeFeatureBody);
+    }
+</div>

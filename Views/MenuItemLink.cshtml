@@ -1,0 +1,10 @@
+﻿@if (Model.Items.Count == 0)
+{
+    <a href="@Model.Href">@Model.Text</a>
+}
+else
+{
+    <a class="dropdown-toggle" data-toggle="dropdown" href="@Model.Href">
+        @Model.Text <span class="caret"></span>
+    </a>
+}

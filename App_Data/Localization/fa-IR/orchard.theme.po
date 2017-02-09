@@ -1,0 +1,93 @@
+#: "~/Themes/Diaco.KimiaRazi.Original/Views/BadgeOfHonor.cshtml"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Views/BadgeOfHonor.cshtml"
+msgid "Powered by <a href=\"{0}\" target=\"_blank\">Orchard</a>"
+msgstr "قدرت گرفته از <a href=\"{0}\" target=\"_blank\">ارچارد</a>"
+
+#: "~/Themes/Diaco.KimiaRazi.Original/Views/Layout.cshtml"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Views/Layout.cshtml"
+msgid "Copyright &copy; KimiaRazi {0}"
+msgstr "کپی‌رایت &copy; کیمیارازی {0}"
+
+msgid "Products"
+msgstr "محصولات"
+
+#: "~/Themes/Diaco.KimiaRazi.Original/Views/Layout.cshtml"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Views/Layout.cshtml"
+msgid "All Rights Reserved."
+msgstr "کلیه حقوق محفوظ است."
+
+#: "~/Themes/Diaco.KimiaRazi.Original/Views/Elements/TextField.cshtml"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Views/Elements/TextField.cshtml"
+msgid "Name"
+msgstr "نام"
+
+#: "~/Themes/Diaco.KimiaRazi.Original/Views/Elements/TextField.cshtml"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Views/Elements/TextField.cshtml"
+msgid "Phone"
+msgstr "شماره‌ی تماس"
+
+#: "~/Themes/Diaco.KimiaRazi.Original/Views/Elements/EmailField.cshtml"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Views/Elements/EmailField.cshtml"
+msgid "Email"
+msgstr "ایمیل *"
+
+#: "~/Themes/Diaco.KimiaRazi.Original/Views/Elements/TextArea.cshtml"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Views/Elements/TextArea.cshtml"
+msgid "Message (Required)"
+msgstr "متن پیام *"
+
+msgid "KimiaRazi"
+msgstr "کیمیارازی"
+
+
+
+
+
+
+
+
+#. "Name"
+#: "~/Themes/Diaco.KimiaRazi.Original/Theme.txt"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Theme.txt"
+msgid "The Theme Machine"
+msgstr "ماشین تم"
+
+#. "Author"
+#: "~/Themes/Diaco.KimiaRazi.Original/Theme.txt"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Theme.txt"
+msgid "jowall, mibach, loudej, heskew"
+msgstr "jowall, mibach, loudej, heskew"
+
+#. "Description"
+#: "~/Themes/Diaco.KimiaRazi.Original/Theme.txt"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Theme.txt"
+msgid "Orchard Theme Machine is a flexible multi-zone theme that provides a solid foundation to build your site. It features 20 collapsible widget zones and is flexible enough to cover a wide range of layouts."
+msgstr ""
+
+#. "Tags"
+#: "~/Themes/Diaco.KimiaRazi.Original/Theme.txt"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Theme.txt"
+msgid "Awesome"
+msgstr "فوق‌العاده"
+
+#. "Website"
+#: "~/Themes/Diaco.KimiaRazi.Original/Theme.txt"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Theme.txt"
+msgid "http://orchardproject.net"
+msgstr "http://orchardproject.net"
+
+#: "~/Themes/Diaco.KimiaRazi.Original/Views/BadgeOfHonor.cshtml"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Views/BadgeOfHonor.cshtml"
+msgid "&#169; The Theme Machine {0}."
+msgstr "&#169; ماشین تم {0}."
+
+#: "~/Themes/Diaco.KimiaRazi.Original/Views/Pager.cshtml"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Views/Pager.cshtml"
+msgid "Newer"
+msgstr "جدیدتر"
+
+#: "~/Themes/Diaco.KimiaRazi.Original/Views/Pager.cshtml"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Views/Pager.cshtml"
+msgid "Older"
+msgstr "قدیمی تر"
+

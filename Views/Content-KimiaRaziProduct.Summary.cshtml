@@ -1,0 +1,23 @@
+﻿@{
+    var title = Model.ContentItem.TitlePart.Title != null ? Model.ContentItem.TitlePart.Title : string.Empty;
+    var subtitle = Model.ContentItem.KimiaRaziProduct.Subtitle.Value;
+    var thumbnailImageAdr = Model.ContentItem.KimiaRaziProduct.Thumbnail.FirstMediaUrl != null ? Model.ContentItem.KimiaRaziProduct.Thumbnail.FirstMediaUrl : string.Empty;
+    Orchard.ContentManagement.ContentItem contentItem = Model.HomeProductTitle.Items[0].ContentPart.ContentItem;
+}
+<article>
+    <img src="@thumbnailImageAdr" alt="@title" />
+    <div class="portfolio-item-content">
+        @if (title != null)
+        {
+            <span class="header">@title</span>
+        }
+        @if (subtitle != null)
+        {
+            <p class="body">@subtitle</p>
+        }
+    </div>
+    @if (contentItem != null)
+    {
+        <a class="btn btn-success more" href='@Url.Action("Frits", "Home")'>@T("Read more") &raquo;</a>
+    }
+</article>
