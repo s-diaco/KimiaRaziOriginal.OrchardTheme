@@ -278,6 +278,7 @@
     <Content Include="Views\Items\FormElement.Wrapper.cshtml" />
     <Content Include="Views\Elements\Button.cshtml" />
     <Content Include="Views\Elements\ContentItem.cshtml" />
+    <Content Include="Views\InlineStyle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">

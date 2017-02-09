@@ -37,27 +37,30 @@
     {
         <!-- animated scroll loading effect -->
         <script type="text/javascript">
-        jQuery(document).ready(function () {
-            jQuery('.post').addClass("not-visible").viewportChecker({
-                classToAdd: 'visible animated fadeInUp',
-                offset: 100
+            jQuery(document).ready(function () {
+                jQuery('.post').addClass("not-visible").viewportChecker({
+                    classToAdd: 'visible animated fadeInUp',
+                    offset: 100
+                });
             });
-        });
         </script>
-    }
-    using (Script.Foot())
-    {
         <!-- Parallax effect
         @@Scripts.Render("~/Scripts/init.js") -->
+        <!-- Page Loading -->
+        <script>
+            $(window).load(function () {
+                document.getElementById("loading").style.display = "none";
+            })
+        </script>
+        <!-- End Page Loading -->
         <!-- Ticker effect -->
-
         <script type="text/javascript">
-        $(document).ready(function () {
-            $('#fade').list_ticker({
-                speed: 20000,
-                effect: 'fade'
-            });
-        })
+            $(document).ready(function () {
+                $('#fade').list_ticker({
+                    speed: 20000,
+                    effect: 'fade'
+                });
+            })
         </script>
     }
 
@@ -97,12 +100,26 @@
     WorkContext.Layout.Footer.Add(New.BadgeOfHonor(), "5"); // Powered by Orchard
     WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
 
+    WorkContext.Layout.Head.Add(New.InlineStyle(), "10");
+
     /* Last bit of code to prep the layout wrapper
     ***************************************************************/
 
     Model.Id = "layout-wrapper";
     var tag = Tag(Model, "div"); // using Tag so the layout div gets the classes, id and other attributes added to the Model
 }
+<!-- Loading div -->
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div id="object">
+                <h4 id="loading-h1" data-text="It's loading…">It's loading…</h4>
+            </div>
+            <div class="loader"></div>
+        </div>
+    </div>
+</div>
+<!-- End Loading div -->
 @if (Model.Header != null)
 {
 <header id="layout-header" class="group">
