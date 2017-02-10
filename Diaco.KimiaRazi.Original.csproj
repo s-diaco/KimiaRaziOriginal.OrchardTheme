@@ -258,7 +258,7 @@
     <Content Include="Views\Items\Content-DiacoTestType.cshtml" />
     <Content Include="Views\Wrapper.HtmlContent.cshtml" />
     <Content Include="Views\Content-KimiaRaziProduct.Summary.cshtml" />
-    <Content Include="Views\Content-KimiaRaziArticle.Detail.cshtml" />
+    <Content Include="Views\Content-ProductFamilyFrit.Detail.cshtml" />
     <Content Include="Views\Content-KimiaRaziFeature.cshtml" />
     <Content Include="Views\Layout-FirstPage.cshtml" />
     <Content Include="Views\Menu.cshtml" />
