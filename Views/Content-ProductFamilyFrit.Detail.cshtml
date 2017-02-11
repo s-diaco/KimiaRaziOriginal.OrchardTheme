@@ -2,15 +2,11 @@
 @{
     // cast in order to have improved accessors
     dynamic contentItem = Model.ContentItem;
-    
-    // var maxTec = contentItem.ProductFamilyFrit.MaxTec.Value;
-    // var imagePath = contentItem.ProductFamilyFrit.Image.FirstMediaUrl;
 
     var contentTypeClassName = ((string)contentItem.ContentType).HtmlClassify();
     Model.Classes.Add(contentTypeClassName);
     Model.Classes.Add("container");
     Model.Classes.Add("content-item");
-    // Model.Attributes.Add("id", "home-about");
 
     var tag = Tag(Model, "article");
 }

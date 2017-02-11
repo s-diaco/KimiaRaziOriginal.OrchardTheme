@@ -35,4 +35,11 @@
       <Place Fields_Numeric__MaxTec="Sepcifications:4" />
     </Match>
   </Match>
+  <Match ContentType="ProductFamilyCompound">
+    <Match DisplayType="Detail">
+      <Place Parts_Title="Header:0"/>
+      <Place Fields_MediaLibraryPicker="ProductImage:0" />
+      <Place Fields_Common_Text__Subtitle="Subtitle:0" />
+    </Match>
+  </Match>
 </Placement>

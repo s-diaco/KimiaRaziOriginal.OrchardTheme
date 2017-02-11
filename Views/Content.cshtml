@@ -4,9 +4,15 @@
 
     // access each part by its name
     string title = contentItem.TitlePart.Title;
+
+    // var maxTec = contentItem.ProductFamilyFrit.MaxTec.Value;  // access numeric filed by its name
+    // var imagePath = contentItem.ProductFamilyFrit.Image.FirstMediaUrl;  // access medilibrarypicker filed by its name
+    // Model.Attributes.Add("id", "home-about");
+
+    var tag = Tag(Model, "article");
 }
 @{ 
-    if(string.IsNullOrEmpty(WorkContext.Layout.Title.ToString()))
+    if (string.IsNullOrEmpty(WorkContext.Layout.Title.ToString()))
     {
         WorkContext.Layout.Title = title;
     }

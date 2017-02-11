@@ -284,6 +284,7 @@
     <Content Include="Views\Fields.Common.Text-ProductFamilyFrit-Subtitle.cshtml" />
     <Content Include="Views\Media.Summary-image.cshtml" />
     <Content Include="Views\Parts\Image.Summary.cshtml" />
+    <Content Include="Views\Content-ProductFamilyCompound.Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
