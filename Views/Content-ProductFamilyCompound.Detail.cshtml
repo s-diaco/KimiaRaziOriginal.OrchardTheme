@@ -24,13 +24,10 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     @tag.StartElement
-                        <!-- Project Details Go Here -->
-                        <h2>@Display(Model.Header)</h2>
-                        <p class="item-intro text-muted">@Display(Model.Subtitle)</p>
-                        <img class="img-responsive img-centered" src="~/@Display(Model.ProductImage)" alt="KimiaRazi Transparent Printing Powder">
-                        <p>
-                            @Display(Model.Content)
-                        </p>
+                        @Display(Model.Header)
+                        @Display(Model.Subtitle)
+                        @Display(Model.ProductImage)
+                        @Display(Model.Content)
                         <ul class="list-inline">
                             <li>@Display(Model.Sepcifications)</li>
                         </ul>

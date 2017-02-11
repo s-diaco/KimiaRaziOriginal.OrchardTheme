@@ -1,0 +1,8 @@
+﻿@{
+    string name = Model.ContentField.DisplayName;
+}
+
+@if (HasText(name) && HasText(Model.Value))
+{
+    <p class="item-intro text-muted">@Model.Value</p>
+}
