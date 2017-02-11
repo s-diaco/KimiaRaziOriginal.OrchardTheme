@@ -279,6 +279,11 @@
     <Content Include="Views\Elements\Button.cshtml" />
     <Content Include="Views\Elements\ContentItem.cshtml" />
     <Content Include="Views\InlineStyle.cshtml" />
+    <Content Include="Views\Fields\Numeric-ProductFamilyFrit.cshtml" />
+    <Content Include="Views\Fields\MediaLibraryPicker-ProductFamilyFrit.cshtml" />
+    <Content Include="Views\Fields.Common.Text-ProductFamilyFrit-Subtitle.cshtml" />
+    <Content Include="Views\Media.Summary-image.cshtml" />
+    <Content Include="Views\Parts\Image.Summary.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">

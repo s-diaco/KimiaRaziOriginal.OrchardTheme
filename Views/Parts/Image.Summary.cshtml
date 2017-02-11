@@ -1,0 +1,9 @@
+﻿@using Orchard.ContentManagement
+@using Orchard.MediaLibrary.Models
+@{
+    ImagePart imagePart = Model.ContentPart;
+    var mediaPart = ((ContentItem)Model.ContentItem).As<MediaPart>();
+}           
+
+<img class="img-responsive" alt="@mediaPart.AlternateText" src="@mediaPart.MediaUrl" />
+

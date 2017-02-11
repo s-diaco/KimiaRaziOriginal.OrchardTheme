@@ -6,16 +6,12 @@
     <Place Parts_Title_Summary="-"/>
     <Place Parts_Common_Metadata_Summary="-"/>
   </Match>
--->
   <Match ContentType="KimiaRaziProduct">
     <Match DisplayType="Summary">
-	    <Place Parts_Title="HomeProductTitle:0"/>
-	    <Place Fields_Common_Text__KimiaRaziProduct__Subtitle="HomeProductSubtitle:0"/>
 	    <Place Fields_MediaLibraryPicker="HomeProductThumbnail:0"/>
     </Match>
   </Match>
   <Match ContentType="KimiaRaziArticle">
-    <Place Parts_Common_Metadata="-"/>
     <Place Parts_Tags_ShowTags="-"/>
   </Match>
   <Match ContentType="KimiaRaziFeature">
@@ -24,7 +20,19 @@
   <Match ContentType="KimiaRaziArticle">
       <Place Parts_Common_Body="HomeAboutBody:0"/>
   </Match>
+-->
   <Match DisplayType="Detail">
     <Place Parts_Localization_ContentTranslations="-"/>
+  </Match>
+  <Match ContentType="ProductFamilyFrit">
+    <Match DisplayType="Detail">
+      <Place Parts_Title="Header:0"/>
+      <Place Fields_MediaLibraryPicker="ProductImage:0" />
+      <Place Fields_Common_Text__Subtitle="Subtitle:0" />
+      <Place Fields_Numeric__MinTemp="Sepcifications:1" />
+      <Place Fields_Numeric__MaxTemp="Sepcifications:2" />
+      <Place Fields_Numeric__MinTec="Sepcifications:3" />
+      <Place Fields_Numeric__MaxTec="Sepcifications:4" />
+    </Match>
   </Match>
 </Placement>

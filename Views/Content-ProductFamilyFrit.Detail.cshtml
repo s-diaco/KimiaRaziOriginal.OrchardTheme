@@ -2,37 +2,18 @@
 @{
     // cast in order to have improved accessors
     dynamic contentItem = Model.ContentItem;
-    if (Model.Title != null) {
-        Layout.Title = Model.Title;
-    }
-
-    var title = contentItem.TitlePart.Title != null ? contentItem.TitlePart.Title : string.Empty;
-    string subtitle = contentItem.ProductFamilyFrit.Subtitle.Value;
-
-    Model.Classes.Add("content-item");
+    
+    // var maxTec = contentItem.ProductFamilyFrit.MaxTec.Value;
+    // var imagePath = contentItem.ProductFamilyFrit.Image.FirstMediaUrl;
 
     var contentTypeClassName = ((string)contentItem.ContentType).HtmlClassify();
     Model.Classes.Add(contentTypeClassName);
-    Model.Classes.Add("col-lg-8");
-    Model.Classes.Add("col-lg-offset-2");
-    Model.Attributes.Add("id", "home-about");
+    Model.Classes.Add("container");
+    Model.Classes.Add("content-item");
+    // Model.Attributes.Add("id", "home-about");
 
     var tag = Tag(Model, "article");
 }
-
-@tag.StartElement
-        @if (title != null)
-        {
-            <h2 class="text-center">@title</h2>
-        }
-        @if (contentItem.BodyPart != null)
-        {
-            @Display(Model.HomeAboutBody);
-        }
-@tag.EndElement
-
-
-
 
 <!-- Header -->
 <header>
@@ -42,32 +23,21 @@
     </div>
 </header>
 <section id="FritDetail1">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    Transparent Frit
-                    <br /><small>KimiaRazi Transparent Frit</small>
-                </h1>
-            </div>
+    @tag.StartElement
+    <div class="row">
+        <div class="col-md-4">
+            @Display(Model.Header)
+            @Display(Model.Subtitle)
+            <h3>@T("Product Description")</h3>
+            @Display(Model.Content)
+            <h3>@T("Technical Specification")</h3>
+            <ul>
+                @Display(Model.Sepcifications)
+            </ul>
         </div>
-        <!-- /.row -->
-        <!-- Portfolio Item Row -->
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Product Description</h3>
-                <p>Different kinds of glossy and semi - glossy transparent frits.</p>
-                <h3>Technical Specification</h3>
-                <ul>
-                    <li>Minimum firing temperature: 1010 ℃</li>
-                    <li>Maximum firing temperature: 1180 ℃</li>
-                    <li>Minimum expansion coefficient: 58 (400℃)</li>
-                    <li>Maximum expansion coefficient: 85 (400℃)</li>
-                </ul>
-            </div>
-            <div class="col-md-8">
-                <img class="img-responsive" src="/Images/Portfolio/trans-frit-big.jpg" alt="Kimia Razi Products">
-            </div>
+        <div class="col-md-8">
+            @Display(Model.ProductImage)
         </div>
     </div>
+    @tag.EndElement
 </section>

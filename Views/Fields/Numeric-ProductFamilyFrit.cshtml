@@ -1,0 +1,10 @@
+﻿@using Orchard.Utility.Extensions
+@{
+    decimal? number = Model.ContentField.Value;
+    string name = Model.ContentField.DisplayName;
+    string unit = name.Contains("temperature") ? "℃" : "(400℃)";
+}
+
+@if (number.HasValue) {
+        <li>@T(name): @(Model.Value) @T(unit)</li>
+}
