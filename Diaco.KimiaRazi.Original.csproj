@@ -289,6 +289,7 @@
     <Content Include="Views\Parts.Title-ProductFamilyCompound.cshtml" />
     <Content Include="Views\Fields.Common.Text-ProductFamilyCompound-Subtitle.cshtml" />
     <Content Include="Views\Fields\MediaLibraryPicker-ProductFamilyCompound.cshtml" />
+    <Content Include="Views\Content-ProductFamilyPowder.Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
