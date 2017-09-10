@@ -5,15 +5,29 @@
 
     var contentTypeClassName = ((string)contentItem.ContentType).HtmlClassify();
     Model.Classes.Add(contentTypeClassName);
-    Model.Classes.Add("modal-body");
-    Model.Classes.Add("content-item");
+    Model.Classes.Add("col-md-4");
+    Model.Classes.Add("col-sm-6");
+    Model.Classes.Add("portfolio-item");
 
     var tag = Tag(Model, "article");
 
-    string linkId = "portfolioModal" + contentItem.Id.ToString();
+    string linkId = "#portfolioModal" + contentItem.Id.ToString();
 }
 
-<!-- Portfolio Modal # -->
+@tag.StartElement
+    <a href="@linkId" class="portfolio-link" data-toggle="modal">
+        <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+                <i class="fa fa-plus fa-3x"></i>
+            </div>
+        </div>
+        <img src="/Images/portfolio/engobe.jpg" class="img-responsive" alt="KimiaRazi Engob Img Placeholder">
+    </a>
+    <div class="portfolio-caption">
+        <h4>@Display(Model.Header)</h4>
+    </div>
+@tag.EndElement
+<!-- Portfolio Modal # 
 <div class="portfolio-modal modal fade post" id="@linkId" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -26,7 +40,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     @tag.StartElement
-                        <h2>@Display(Model.Header)</h2>
+                        @Display(Model.Header)
                         @Display(Model.Subtitle)
                         @Display(Model.ProductImage)
                         @Display(Model.Content)
@@ -39,4 +53,4 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->

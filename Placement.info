@@ -42,4 +42,11 @@
       <Place Fields_Common_Text__Subtitle="Subtitle:0" />
     </Match>
   </Match>
+  <Match ContentType="ProductFamilyCompound">
+    <Match DisplayType="Summary">
+      <Place Parts_Title="Header:0"/>
+      <Place Fields_MediaLibraryPicker="-" />
+      <Place Fields_Common_Text__Subtitle="-" />
+    </Match>
+  </Match>
 </Placement>
