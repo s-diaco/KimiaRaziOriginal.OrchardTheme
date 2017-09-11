@@ -9,7 +9,7 @@
     Model.Classes.Add("col-sm-6");
     Model.Classes.Add("portfolio-item");
 
-    var tag = Tag(Model, "article");
+    var tag = Tag(Model, "div");
 
     string linkId = "#portfolioModal" + contentItem.Id.ToString();
 }
@@ -21,36 +21,9 @@
                 <i class="fa fa-plus fa-3x"></i>
             </div>
         </div>
-        <img src="/Images/portfolio/engobe.jpg" class="img-responsive" alt="KimiaRazi Engob Img Placeholder">
+        @Display(Model.Image)
     </a>
     <div class="portfolio-caption">
-        <h4>@Display(Model.Header)</h4>
+        <h4>@Display(Model.Caption)</h4>
     </div>
-@tag.EndElement
-<!-- Portfolio Modal # 
-<div class="portfolio-modal modal fade post" id="@linkId" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    @tag.StartElement
-                        @Display(Model.Header)
-                        @Display(Model.Subtitle)
-                        @Display(Model.ProductImage)
-                        @Display(Model.Content)
-                        <ul class="list-inline">
-                            <li>@Display(Model.Sepcifications)</li>
-                        </ul>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> @T("Go Back")</button>
-                    @tag.EndElement
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
+@tag.EndElement

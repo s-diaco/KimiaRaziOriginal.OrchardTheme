@@ -44,8 +44,8 @@
   </Match>
   <Match ContentType="ProductFamilyCompound">
     <Match DisplayType="Summary">
-      <Place Parts_Title="Header:0"/>
-      <Place Fields_MediaLibraryPicker="-" />
+      <Place Parts_Title="Caption:0"/>
+      <Place Fields_MediaLibraryPicker="Image:0" />
       <Place Fields_Common_Text__Subtitle="-" />
     </Match>
   </Match>
