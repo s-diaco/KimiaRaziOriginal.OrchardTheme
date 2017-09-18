@@ -1,0 +1,154 @@
+﻿@{
+    // cast in order to have improved accessors
+    dynamic contentItem = Model.ContentItem;
+
+    // access each part by its name
+    string title = contentItem.TitlePart.Title;
+
+    // var maxTec = contentItem.ProductFamilyFrit.MaxTec.Value;  // access numeric filed by its name
+    // var imagePath = contentItem.ProductFamilyFrit.Image.FirstMediaUrl;  // access medilibrarypicker filed by its name
+    // Model.Attributes.Add("id", "home-about");
+
+    var tag = Tag(Model, "article");
+}
+@{ 
+    if (string.IsNullOrEmpty(WorkContext.Layout.Title.ToString()))
+    {
+        WorkContext.Layout.Title = title;
+    }
+}
+<!-- Header -->
+<header style="background-image: url('/OrchardLocal/Themes/Diaco.KimiaRazi.Original/Content/Images/Shared/header-bg7.jpg');">
+    <div class="container">
+        <div class="intro-text">
+        </div>
+    </div>
+</header>
+
+<!-- Products Grid Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row post">
+            <div class="col-xs-12">
+                <h2 class="section-heading">Frits</h2>
+                <img class="article-img-1 pull-right" src="/OrchardLocal/Media/Default/Images/article/frit2.jpg" />
+                <h3 class="section-subheading text-muted">KimiaRazi is the biggest and pioneer in manufacturing different kinds of Frit for producing Tile and Ceramic in Iran. Its products on the wide variety of type, thermal expansion coefficient and firing temperature has made an outstanding contribution to reputable Iranian Ceramic and Tile producers’ success.</h3>
+                <p>Frit is the main component of almost all kinds of glaze. Frit is one of the constituents of most of transparent glazes. The verity of frit consumption and tile production procedure in which frit is used, has affected the wide range of quality over time.</p>
+                <p>
+                    The different base frits have variable types. KimiaRazi is able to produce all kinds of frit. It has employed modern machinery and expert workforce in addition to 40 year experience in producing frit. Its wide range of products enabled it to meet any demand of the customers for firing temperature, thermal expansion coefficient, surface quality, physical specifications, effects and different usage.
+                </p>
+                <p>
+                    KimiaRazi is the largest and most successful Tile and Ceramic supplier of frit, relying on high quality of its products.
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 portfolio-item">
+                <a href='/OrchardLocal/Frit/Tranparent' class="portfolio-link">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/trans-frit.jpg" class="img-responsive" alt="KimiaRazi Transparent Frit">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Transparent Frit</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 portfolio-item">
+                <a href='/en/Home/ProductDetail/2' class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/matt-frit.jpg" class="img-responsive" alt="KimiaRazi Matt Frit">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Matt Frit</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 portfolio-item">
+                <a href='/en/Home/ProductDetail/1' class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/opaque-frit.jpg" class="img-responsive" alt="KimiaRazi Opaque Frit">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Opaque Frit</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 portfolio-item">
+                <a href='/en/Home/ProductDetail/4' class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/engobe-frit.jpg" class="img-responsive" alt="KimiaRazi Engobe Frit">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Engob Frit</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    The main concern of the company in addition to offering the product in full agreement with customers’ requirement is maintaining the quality, consistency and stability in the product which would be possible for frits due to following factors:
+                </p>
+                <ul class="tick-list">
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Applying experienced experts in whole testing and producing process.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Using high grade raw materials in producing frit.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Using modern laboratory and production equipment.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        All frits in high quantity order produce in continuous kiln.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        The consistence of all primary and raw material input are controlled and checked by comparative and analytic quality and quantity tests.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Precise controlling and checking of the produced frits by sampling and testing any 1000 kg of produced frits.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Checking firing coefficient and specifications with Dilatometer and thermal microscopes.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Adequate primary and raw material storage. There is always enough primary and raw materials stock for one year at least.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        Applying frit homogenizing system before delivering the orders to customers.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+@Display(Model.Content)
+@if (Model.Footer != null)
+{
+    <footer>
+        @Display(Model.Footer)
+    </footer>
+}

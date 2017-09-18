@@ -1,0 +1,117 @@
+﻿@{
+    // cast in order to have improved accessors
+    dynamic contentItem = Model.ContentItem;
+
+    // access each part by its name
+    string title = contentItem.TitlePart.Title;
+
+    // var maxTec = contentItem.ProductFamilyFrit.MaxTec.Value;  // access numeric filed by its name
+    // var imagePath = contentItem.ProductFamilyFrit.Image.FirstMediaUrl;  // access medilibrarypicker filed by its name
+    // Model.Attributes.Add("id", "home-about");
+
+    var tag = Tag(Model, "article");
+}
+@{ 
+    if (string.IsNullOrEmpty(WorkContext.Layout.Title.ToString()))
+    {
+        WorkContext.Layout.Title = title;
+    }
+}
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="intro-text">
+        </div>
+    </div>
+</header>
+<!-- Products Grid Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row post">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Printing powder</h2>
+                <h3 class="section-subheading text-muted">KimiaRazi Printing powders</h3>
+            </div>
+        </div>
+        <div class="row post">
+            <div class="col-xs-12">
+                <p>The quality of printing powder plays a significant role in quality of designs on the body and rotocolor print machines life. We should apply the most matched printing powder and the suitable good quality color as well to achieve the highest quality and stability.</p><p>KimiaRazi makes printing powders with the latest and advanced technology and machinery to provide high quality and stability come to customers’ expectations.</p><p>The printing powders from a variety kinds allow the company to meet all variable needs of the market. The company’s experts with lots of years of practical experience in designing different kinds of printing powder for rotocolor prints, design the best and most suitable formula for the customer.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal220" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/powder-transparent-small.jpg" class="img-responsive" alt="KimiaRazi Transparent Printing Powder">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Transparent Printing Powder</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal221" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/powder-matt-small.jpg" class="img-responsive" alt="KimiaRazi Matt Printing Powder">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Matt Printing Powder</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal222" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/powder-opaque-small.jpg" class="img-responsive" alt="KimiaRazi Opaque Printing Powder">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Opaque Printing Powder</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal223" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/powder-reactive-small.jpg" class="img-responsive" alt="KimiaRazi Reactive Powder">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Re-active Printing Powder</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal224" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/powder-luster-small.jpg" class="img-responsive" alt="KimiaRazi Luster Powder">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Luster Printing Powder</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@Display(Model.Content)
+@if (Model.Footer != null)
+{
+    <footer>
+        @Display(Model.Footer)
+    </footer>
+}

@@ -292,6 +292,9 @@
     <Content Include="Views\Content-ProductFamilyCompound.Summary.cshtml" />
     <Content Include="Views\Parts.Title-ProductFamilyCompound.cshtml" />
     <Content Include="Views\Content-214.cshtml" />
+    <Content Include="Views\Content-229.cshtml" />
+    <Content Include="Views\Content-219.cshtml" />
+    <Content Include="Views\Content-56.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
