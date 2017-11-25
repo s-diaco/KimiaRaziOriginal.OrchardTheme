@@ -254,7 +254,9 @@
     <Content Include="Content\Web.config" />
     <Content Include="Theme.txt" />
     <Content Include="Theme.png" />
-    <Content Include="Placement.info" />
+    <Content Include="Placement.info">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Layout.cshtml" />
     <Content Include="Views\Items\Content-DiacoTestType.cshtml" />
     <Content Include="Views\Wrapper.HtmlContent.cshtml" />
@@ -295,6 +297,9 @@
     <Content Include="Views\Content-229.cshtml" />
     <Content Include="Views\Content-219.cshtml" />
     <Content Include="Views\Content-56.cshtml" />
+    <Content Include="Views\Content-190.cshtml" />
+    <Content Include="Views\Content-184.cshtml" />
+    <Content Include="Views\Content-235.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">

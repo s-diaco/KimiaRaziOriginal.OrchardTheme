@@ -1,0 +1,157 @@
+﻿@{
+    // cast in order to have improved accessors
+    dynamic contentItem = Model.ContentItem;
+
+    // access each part by its name
+    string title = contentItem.TitlePart.Title;
+
+    // var maxTec = contentItem.ProductFamilyFrit.MaxTec.Value;  // access numeric filed by its name
+    // var imagePath = contentItem.ProductFamilyFrit.Image.FirstMediaUrl;  // access medilibrarypicker filed by its name
+    // Model.Attributes.Add("id", "home-about");
+
+    var tag = Tag(Model, "article");
+}
+@{ 
+    if (string.IsNullOrEmpty(WorkContext.Layout.Title.ToString()))
+    {
+        WorkContext.Layout.Title = title;
+    }
+}
+<!-- Header -->
+<header style="background-image: url('/OrchardLocal/Themes/Diaco.KimiaRazi.Original/Content/Images/Shared/header-bg7.jpg');">
+    <div class="container">
+        <div class="intro-text">
+        </div>
+    </div>
+</header>
+
+<!-- Colors Grid Section -->
+
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row post visible animated bounceInUp">
+            <div class="col-xs-12">
+                <h2 class="section-heading">فریت‌ها</h2>
+                <img class="article-img-1 pull-right" src="/OrchardLocal/Media/Default/Images/article/frit2.jpg">
+                <h3 class="section-subheading text-muted">ما اولین و بزرگترین تولید کننده انواع فریت برای تولیدکنندگان کاشی و سرامیک در ایران هستیم. محصولات ما با ویژگی‌های متنوع از نظر نوع، ضریب انبساط حرارتی و دمای پخت سهم به‌سزایی در موفقیت بسیاری از تولیدکنندگان مطرح کاشی و سرامیک ایران دارد.</h3>
+                <p>
+                    فریت‌ها جزء اصلی تقریباً همه لعاب‌های سرامیکی هستند و در بسیاری از ترکیبات سطح شیشه‌ای وجود دارند. تنوع موارد استفاده و روش‌های تولید کاشی‌هایی که فریت در آنها استفاده می‌شود، باعث شده فریت‌ها در طول زمان تنوع کیفی زیادی پیدا کنند.
+                </p>
+                <p>
+                    فریت‌ها در ابعاد مختلف تقسیم بندی‌های متنوعی دارند که شرکت کیمیارازی با استفاده از ماشین‌آلات مدرن و نیروی متخصص خود و با پشتوانه حدود چهار دهه تجربه در تولید انواع فریت، هر نوع فریتی را تولید می‌کند. با تنوع بالای محصولات، کیمیارازی قادر است هر خواسته‌ای از طرف مشتری را در زمینه درجه حرارت پخت، ضریب انبساط حرارتی، کیفیت سطحی، ویژگی‌های فیزیکی، افکت‌ها و کاربردهای مختلف را برآورده سازد.
+                </p>
+                <p>
+                    شرکت کیمیارازی با تکیه بر کیفیت بالای محصولات تولیدی خود، تأمین‌کننده اصلی فریت برای بسیاری از شرکت‌های بزرگ و موفق تولید کننده کاشی و سرامیک بوده است.
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 portfolio-item">
+                <a href="/fa/Home/ProductDetail/3" class="portfolio-link">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/trans-frit.jpg" class="img-responsive" alt="KimiaRazi Transparent Frit">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>فریت ترانسپارنت</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 portfolio-item">
+                <a href="/fa/Home/ProductDetail/2" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/matt-frit.jpg" class="img-responsive" alt="KimiaRazi Matt Frit">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>فریت مات</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 portfolio-item">
+                <a href="/fa/Home/ProductDetail/1" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/opaque-frit.jpg" class="img-responsive" alt="KimiaRazi Opaque Frit">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>فریت اوپک</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 portfolio-item">
+                <a href="/fa/Home/ProductDetail/4" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/engobe-frit.jpg" class="img-responsive" alt="KimiaRazi Engobe Frit">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>فریت انگوب</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    اصلی‌ترین دغدغه کیمیارازی بعد از ارائه محصول متناسب با درخواست مشتری، حفظ ثبات کیفیت و یکنواختی در محصول ارائه شده است که این مهم در مورد فریت‌ها با استفاده از چند عامل زیر محقق شده است:
+                </p>
+                <ul class="tick-list">
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        بهره‌گیری از نیروهای متخصص و مجرب در کلیه مراحل تولید و آزمایشگاه
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        استفاده از مواد اولیه مرغوب برای تولید فریت.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        استفاده از تجهیزات مدرن آزمایشگاهی و تولیدی.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        همه سفارش‌های فریت با مقدار بالا در کوره‌های مداوم تولید می‌گردد.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        کنترل دقیق مواد اولیه ورودی به لحاظ ثبات، با استفاده از آزمایش‌های کمی و کیفی مقایسه‌ای و آنالیزی.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        کنترل دقیق فریت تولیدی به‌صورت نمونه‌برداری و آزمایش هر تن از فریت تولید شده.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        کنترل ضریب و مشخصات پخت با استفاده از دیلاتومتر و میکروسکوپ حرارتی.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        ذخیره مناسب از مواد اولیه. همیشه حداقل به اندازه یک سال تولید، مواد اولیه ذخیره انبار است.
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle"></i>
+                        استفاده از سیستم همگن‌سازی فریت‌ها قبل از ارسال برای مشتری.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+@Display(Model.Content)
+@if (Model.Footer != null)
+{
+    <footer>
+        @Display(Model.Footer)
+    </footer>
+}

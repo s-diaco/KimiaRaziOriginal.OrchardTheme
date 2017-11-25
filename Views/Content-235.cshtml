@@ -1,0 +1,119 @@
+﻿@{
+    // cast in order to have improved accessors
+    dynamic contentItem = Model.ContentItem;
+
+    // access each part by its name
+    string title = contentItem.TitlePart.Title;
+
+    // var maxTec = contentItem.ProductFamilyFrit.MaxTec.Value;  // access numeric filed by its name
+    // var imagePath = contentItem.ProductFamilyFrit.Image.FirstMediaUrl;  // access medilibrarypicker filed by its name
+    // Model.Attributes.Add("id", "home-about");
+
+    var tag = Tag(Model, "article");
+}
+@{ 
+    if (string.IsNullOrEmpty(WorkContext.Layout.Title.ToString()))
+    {
+        WorkContext.Layout.Title = title;
+    }
+}
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="intro-text">
+        </div>
+    </div>
+</header>
+
+<!-- Products Grid Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row post visible animated bounceInUp full-visible">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">پودر چاپ</h2>
+                <h3 class="section-subheading text-muted">انواع پودر چاپ کیمیارازی</h3>
+            </div>
+        </div>
+        <div class="row post visible animated bounceInUp">
+            <div class="col-xs-12">
+                <p>کیفیت پودر چاپ نقش بسیار مهمی در کیفیت طرح اعمال شده روی بدنه و عمر دستگاه‌های چاپ تخت یا Rotocolor دارد. در کنار استفاده از رنگ‌های مناسب و باکیفیت٬ برای رسیدن به کیفیت و ثبات بهینه باید مناسب‌ترین پودر چاپ به کار برده شود.</p><p>پودر چاپ‌های شرکت کیمیارازی با استفاده از آخرین فناوری روز و تجهیزات پیشرفته تولید می‌شوند تا کیفیت بالا و ثبات موردنظر مشتری تأمین گردد.</p>
+                <p>تنوع بالای محصولات٬ ما را قادر می‌کند که پاسخ‌گوی هر نوع نیاز در بازار متنوع این محصول باشیم. کارشناسان ما با سال‌ها تجربه در طراحی انواع پودر چاپ برای استفاده چاپ تخت و Rotocolor، بهترین و مناسب‌ترین فرمول را برای شما طراحی می‌کنند.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/powder-transparent-small.jpg" class="img-responsive" alt="KimiaRazi Transparent Printing Powder">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>پودر چاپ ترانسپارنت</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/powder-matt-small.jpg" class="img-responsive" alt="KimiaRazi Matt Printing Powder">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>پودر چاپ مات</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/powder-opaque-small.jpg" class="img-responsive" alt="KimiaRazi Opaque Printing Powder">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>پودر چاپ اوپک</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/powder-reactive-small.jpg" class="img-responsive" alt="KimiaRazi Reactive Powder">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>پودر چاپ ری‌اکتیو</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="/OrchardLocal/Media/Default/Images/portfolio/powder-luster-small.jpg" class="img-responsive" alt="KimiaRazi Luster Powder">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>پودر چاپ لوستر</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@Display(Model.Content)
+@if (Model.Footer != null)
+{
+    <footer>
+        @Display(Model.Footer)
+    </footer>
+}
