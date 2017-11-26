@@ -22,8 +22,8 @@ namespace Diaco.KimiaRazi
                 .SetDependencies("jQuery");
 
             manifest.DefineScript("jQueryViewportChecker").SetUrl("jquery.viewportchecker.min.js")
-                .SetCdn("//cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.7/jquery.viewportchecker.min.js")
-                .SetVersion("1.8.7")
+                .SetCdn("//cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js")
+                .SetVersion("1.8.8")
                 .SetDependencies("jQuery");
 
             manifest.DefineScript("Classie").SetUrl("classie.min.js", "classie.js")

@@ -16,7 +16,7 @@
     Style.Include("grayscale.css");
     Style.Include("stylish-portfolio.css");
     Style.Include("kimiarazi.css");
-    Style.Include("animate.css");
+    Style.Include("Animate");
     Style.Require("FontAwesome");
     if (WorkContext.CurrentCultureInfo().TextInfo.IsRightToLeft)
     {
@@ -38,7 +38,7 @@
         <!-- animated scroll loading effect -->
         <script type="text/javascript">
             jQuery(document).ready(function () {
-                jQuery('.post').addClass("not-visible").viewportChecker({
+                jQuery('.post').addClass("invisible").viewportChecker({
                     classToAdd: 'visible animated fadeInUp',
                     offset: 100
                 });

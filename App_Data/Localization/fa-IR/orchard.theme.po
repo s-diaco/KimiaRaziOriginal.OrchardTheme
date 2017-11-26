@@ -6,7 +6,7 @@ msgstr "قدرت گرفته از <a href=\"{0}\" target=\"_blank\">ارچارد<
 #: "~/Themes/Diaco.KimiaRazi.Original/Views/Layout.cshtml"
 msgctxt "~/Themes/Diaco.KimiaRazi.Original/Views/Layout.cshtml"
 msgid "Copyright &copy; KimiaRazi {0}"
-msgstr "کپی‌رایت &copy; کیمیارازی {0}"
+msgstr "کپی‌رایت &copy; کیمیا رازی {0}"
 
 msgid "Products"
 msgstr "محصولات"
@@ -37,7 +37,7 @@ msgid "Message (Required)"
 msgstr "متن پیام *"
 
 msgid "KimiaRazi"
-msgstr "کیمیارازی"
+msgstr "کیمیا رازی"
 
 
 

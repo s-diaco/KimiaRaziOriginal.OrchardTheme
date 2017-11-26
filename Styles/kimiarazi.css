@@ -322,7 +322,7 @@ ul.big-list > li {
     opacity: 1;
 }
 
-.not-visible {
+.invisible {
     opacity: 0;
 }
 

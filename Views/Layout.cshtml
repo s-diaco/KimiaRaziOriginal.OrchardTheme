@@ -1,4 +1,5 @@
-﻿@using Orchard.Localization
+﻿
+@using Orchard.Localization
 @functions {
     // To support the layout classifaction below. Implementing as a razor function because we can, could otherwise be a Func<string[], string, string> in the code block following.
     string CalcuClassify(string[] zoneNames, string classNamePrefix) {
@@ -27,15 +28,15 @@
     Script.Include("messages.js");
     Script.Require("Bootstrap");
     Script.Require("jQueryEasing");
-    Script.Require("jQueryViewportChecker");
     Script.Require("Classie");
     Script.Include("cbpAnimatedHeader.js");
+    Script.Require("jQueryViewportChecker");
     using (Script.Foot())
     {
         <!-- animated scroll loading effect -->
         <script type="text/javascript">
         jQuery(document).ready(function () {
-            jQuery('.post').addClass("not-visible").viewportChecker({
+            jQuery('.post').addClass("invisible").viewportChecker({
                 classToAdd: 'visible animated fadeInUp',
                 offset: 100
             });
