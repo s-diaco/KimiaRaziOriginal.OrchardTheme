@@ -10,8 +10,6 @@ namespace Diaco.KimiaRazi
                 .SetCdn("//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css", "//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css", true)
                 .SetVersion("3.5.2");
 
-            manifest.DefineStyle("Toastr").SetUrl("toastr.min.css", "toastr.css")
-                .SetCdn("//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css", "//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css", true);
             manifest.DefineScript("Toastr").SetUrl("toastr.min.js", "toastr.js")
                 .SetCdn("//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js")
                 .SetDependencies("jQuery");
