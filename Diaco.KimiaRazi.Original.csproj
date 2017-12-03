@@ -201,14 +201,14 @@
     <Content Include="Content\Images\Shared\spacer.png" />
     <Content Include="Content\toastr.scss" />
     <Content Include="Content\toastr.less" />
-    <None Include="CustomProfile.pubxml" />
+    <Content Include="CustomProfile.pubxml" />
     <None Include="less\kimiarazi-rtl.less" />
     <Content Include="Scripts\agency.js" />
     <Content Include="Scripts\cbpAnimatedHeader.js" />
     <Content Include="Scripts\cbpAnimatedHeader.min.js" />
     <Content Include="Scripts\classie.js" />
     <Content Include="Scripts\contact_me.js" />
-    <None Include="Scripts\jquery-1.6.3-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.3-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.3.js" />
     <Content Include="Scripts\jquery-1.6.3.min.js" />
     <Content Include="Scripts\Lib.js" />
@@ -232,7 +232,7 @@
     <Content Include="fonts\Web.config" />
     <Content Include="packages.config" />
     <Content Include="App_Data\Localization\fa-IR\orchard.theme.po" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -242,7 +242,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\ticker00.js" />
-    <None Include="Scripts\_references.js" />
+    <Content Include="Scripts\_references.js" />
     <Content Include="Styles\animate.css" />
     <Content Include="Styles\kimiarazi-rtl.css" />
     <Content Include="Styles\kimiarazi.css" />
