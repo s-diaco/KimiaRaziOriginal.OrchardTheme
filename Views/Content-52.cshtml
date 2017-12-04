@@ -1,0 +1,143 @@
+﻿@{
+    // cast in order to have improved accessors
+    dynamic contentItem = Model.ContentItem;
+
+    // access each part by its name
+    string title = contentItem.TitlePart.Title;
+
+    // var maxTec = contentItem.ProductFamilyFrit.MaxTec.Value;  // access numeric filed by its name
+    // var imagePath = contentItem.ProductFamilyFrit.Image.FirstMediaUrl;  // access medilibrarypicker filed by its name
+    // Model.Attributes.Add("id", "home-about");
+
+    var tag = Tag(Model, "article");
+}
+@{ 
+    if (string.IsNullOrEmpty(WorkContext.Layout.Title.ToString()))
+    {
+        WorkContext.Layout.Title = title;
+    }
+}
+
+<!-- Intro Header --><header class="intro">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="brand-heading">KimiaRazi</h1>
+                    <ul id="fade">
+                        <li>
+                            <p class="intro-text">The <span class="colored-span">First</span> and <span class="colored-span">Biggest</span> producer of<br />ceramic glazes and inks in Iran.</p>
+                        </li>
+                        <li>
+                            <p class="intro-text">The most <span class="colored-span">Diverse</span> and <span class="colored-span">Modern</span> products<br />in Iran's ceramic glaze industry.</p>
+                        </li>
+                    </ul>
+                    <a href="#about-2" class="btn btn-circle page-scroll"> <i class="fa fa-angle-double-down animated"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!-- About Section -->
+<section id="about-2" class="container content-section">
+    <div class="row">
+        <div id="home-about" class="col-lg-8 col-lg-offset-2">
+            <h2 class="text-center">Our Policy</h2>
+            <p>KimiaRazi is the first and largest Ceramic glaze and Digital printing Ink manufacturer in Iran. It applies new technology and experienced proficient human resource to improve the quality of its products to fulfill its commitments to satisfy the customers&rsquo; requirements. KimiaRazi commits to constant improving of production process based on its capabilities. Therefore, it has adopted a strict policy offers superior and improving quality.</p>
+            <ul class="tick-list home-tick-list">
+                <li><i class="fa fa-check-circle"></i> Meeting customers&rsquo; requirements and needs of high quality products, due to their expectations and mutual agreement, with fully understanding them.</li>
+                <li><i class="fa fa-check-circle"></i> Expanding research and development work based on company&rsquo;s capabilities to strengthen their competitive advantages, stay active and dominating presence in the market, adopt approaches to achieving economical products, and applying modern technology.</li>
+                <li><i class="fa fa-check-circle"></i> Improving human resources as the most valuable investment resource by constant training, close co-operation in improvement of production process, taking their useful practical suggestions into consideration, and recruiting experienced and expert workforce as well.</li>
+                <li><i class="fa fa-check-circle"></i> An efficient connection with raw and primary materials suppliers to supply the factory&rsquo;s required materials on demand, at the proper time and soon enough.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Section #3 Portfiloio -->
+<section id="home" data-speed="4" data-type="background">
+    <div class="container">
+        <div class="portfolio-page portfolio-4column">
+            <ul id="portfolio-list" data-animated="fadeIn">
+                <li class="col-md-3 col-sm-6 col-xs-12 post">
+                    <img src=@Href("~/Media/Default/Images/home/home-frit.jpg") alt="KimiaRazi Frit" />
+                    <div class="portfolio-item-content">
+                        <span class="header">Frit</span>
+                        <p class="body">KimiaRazi</p>
+                    </div>
+                    <a class="btn btn-success more" href="en-US/Home/Frits">Read more &raquo;</a>
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-12 post">
+                    <img src=@Href("~/Media/Default/Images/home/home-glaze.jpg") alt="KimiaRazi Third firing" />
+                    <div class="portfolio-item-content">
+                        <span class="header">Compounds</span>
+                        <p class="body">KimiaRazi</p>
+                    </div>
+                    <a class="btn btn-success more" href="en-US/Home/Glazes">Read more &raquo;</a>
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-12 post">
+                    <img src=@Href("~/Media/Default/Images/home/home-third.jpg") alt="KimiaRazi Third firing" />
+                    <div class="portfolio-item-content">
+                        <span class="header">Third Firing</span>
+                        <p class="body">KimiaRazi</p>
+                    </div>
+                    <a class="btn btn-success more" href="en-US/Home/Third-Firing">Read more &raquo;</a>
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-12 post">
+                    <img src=@Href("~/Media/Default/Images/home/home-ink.jpg") alt="Kimiarazi Digital Ink for Tile Printing" />
+                    <div class="portfolio-item-content">
+                        <span class="header">Ink</span>
+                        <p class="body">KimiaRazi</p>
+                    </div>
+                    <a class="btn btn-success more" href="en-US/Home/Digital-Printing">Read more &raquo;</a>
+                </li>
+            </ul>
+            <!-- End Portfolio Items -->
+        </div>
+    </div>
+</section>
+<!-- Services -->
+<p></p>
+<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+<section id="services" class="services bg-primary">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h2>KimiaRazi</h2>
+                <hr class="small" />
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 post">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-graduation-cap fa-stack-1x text-primary"></i> </span>
+                            <h4><strong>Experience</strong></h4>
+                            <p>KimiaRazi, with more than 30 year experience, is one of the oldest and biggest producers of frit and ceramic glaze in Iran.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 post">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-cogs fa-stack-1x text-primary"></i> </span>
+                            <h4><strong>Technology</strong></h4>
+                            <p>KimiaRazi apply the latest, most modern and advanced technology and equipment for designing and producing its products.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 post">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-line-chart fa-stack-1x text-primary"></i> </span>
+                            <h4><strong>Quality</strong></h4>
+                            <p>Many reputable, successful and big Tile and Ceramic producers use KimiaRazi products.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 post">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-users fa-stack-1x text-primary"></i> </span>
+                            <h4><strong>Services</strong></h4>
+                            <p>We are always in a close relation to the customers to achieve the best end product.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row (nested) -->
+            </div>
+            <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>

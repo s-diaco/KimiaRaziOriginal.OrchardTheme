@@ -301,6 +301,7 @@
     <Content Include="Views\Content-190.cshtml" />
     <Content Include="Views\Content-184.cshtml" />
     <Content Include="Views\Content-235.cshtml" />
+    <Content Include="Views\Content-52.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
