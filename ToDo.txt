@@ -15,3 +15,4 @@ ________________________________________________________________________________
 - sitemap module not working
 - send message has no confirmation
 - rewriterules module not working
+- update mail settings
