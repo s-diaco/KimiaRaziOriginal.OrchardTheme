@@ -1,0 +1,17 @@
+- Complete seo meta tags and page tile
+- create 404 and other error pages.
+- auto generate robots.txt or sitemap.xml
+- write tests (orchard has inbuild tests alredy?)
+- complete theme.txt and theme thumbnail
+- use orchard warmup.
+-"Contact us" anchor is broken In the buttom of home page.
+-Home Links in the first page are relative.
+-Add Alt tag to all images
+_____________________________________________________________________________________
+- add recapcha
+- year name after copyright is static (2016) should be 2016 - 17, 1385 - 1386?
+- menu has no background after refresh in "no home" pages (use homepage scroll effect for all).
+- Loading on Homepage is dangerous. some content may not load.
+- pdf downlad link (include in sitemap)
+- sitemap module not working
+- send message has no confirmation

@@ -1,0 +1,4 @@
+1- build precompiled
+2- Copy app_data
+3- Copy Moduloes
+4- Copy Media/Default
