@@ -4,14 +4,14 @@
 - write tests (orchard has inbuild tests alredy?)
 - complete theme.txt and theme thumbnail
 - use orchard warmup.
--"Contact us" anchor is broken In the buttom of home page.
--Home Links in the first page are relative.
--Add Alt tag to all images
+- Home Links in the first page are relative.
+- Add Alt tag to all images
+- enable combinator
+- Pages with duplicate meta descriptions
 _____________________________________________________________________________________
 - add recapcha
-- year name after copyright is static (2016) should be 2016 - 17, 1385 - 1386?
 - menu has no background after refresh in "no home" pages (use homepage scroll effect for all).
 - Loading on Homepage is dangerous. some content may not load.
-- pdf downlad link (include in sitemap)
 - sitemap module not working
 - send message has no confirmation
+- rewriterules module not working

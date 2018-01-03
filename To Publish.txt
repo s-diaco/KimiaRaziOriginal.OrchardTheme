@@ -1,4 +1,5 @@
 1- build precompiled
 2- Copy app_data
-3- Copy Moduloes
+3- Copy Moduloes *Not Needed anymore
 4- Copy Media/Default
+5- Copy Web.config (Orchard.web)
