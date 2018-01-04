@@ -11,3 +11,4 @@ ________________________________________________________________________________
 - Loading on Homepage is dangerous. some content may not load.
 - sitemap module not working
 - rewriterules module not working
+- header-bg6.jpg returns 404
