@@ -5,5 +5,5 @@ Description: The original theme of the website
 Version: 1.0
 BaseTheme: TheThemeMachine
 # todo: provide tags
-# Tags: Classic, Serif
-# todo: Dependencies: Orchard.DynamicForms, Orchard.Layouts
+Tags: Classic, Serif, Bootstrap
+Dependencies: Orchard.DynamicForms, Orchard.Layouts

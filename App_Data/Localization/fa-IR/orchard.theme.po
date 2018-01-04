@@ -36,8 +36,18 @@ msgctxt "~/Themes/Diaco.KimiaRazi.Original/Views/Elements/TextArea.cshtml"
 msgid "Message (Required)"
 msgstr "متن پیام *"
 
+#: "~/Themes/Diaco.KimiaRazi.Original/Views/Elements/Form.cshtml"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Views/Elements/Form.cshtml"
+msgid "Send a Message"
+msgstr "ارسال پیام"
+
+#: "~/Themes/Diaco.KimiaRazi.Original/Views/Elements/Form.cshtml"
+msgctxt "~/Themes/Diaco.KimiaRazi.Original/Views/Elements/Form.cshtml"
+msgid "Please send your message here."
+msgstr "پیام خود را از این قسمت برای ما ارسال کنید."
+
 msgid "KimiaRazi"
-msgstr "کیمیا رازی"
+msgstr "کیمیارازی"
 
 
 

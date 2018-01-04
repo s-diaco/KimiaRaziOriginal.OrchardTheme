@@ -1,8 +1,6 @@
 - Complete seo meta tags and page tile
-- create 404 and other error pages.
 - auto generate robots.txt or sitemap.xml
 - write tests (orchard has inbuild tests alredy?)
-- complete theme.txt and theme thumbnail
 - use orchard warmup.
 - Home Links in the first page are relative.
 - Add Alt tag to all images
@@ -13,6 +11,4 @@ ________________________________________________________________________________
 - menu has no background after refresh in "no home" pages (use homepage scroll effect for all).
 - Loading on Homepage is dangerous. some content may not load.
 - sitemap module not working
-- send message has no confirmation
 - rewriterules module not working
-- update mail settings
