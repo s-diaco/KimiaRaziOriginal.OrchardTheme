@@ -253,8 +253,8 @@
     <Content Include="Styles\toastr.min.css" />
     <Content Include="To Publish.txt" />
     <Content Include="ToDo.txt" />
-    <None Include="Views\ErrorPage.cshtml" />
-    <None Include="Views\NotFound.cshtml" />
+    <Content Include="Views\ErrorPage.cshtml" />
+    <Content Include="Views\NotFound.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
