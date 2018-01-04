@@ -204,9 +204,11 @@
     <Content Include="CustomProfile.pubxml" />
     <None Include="less\kimiarazi-rtl.less" />
     <Content Include="Scripts\agency.js" />
+    <Content Include="Scripts\animated-header.js" />
     <Content Include="Scripts\cbpAnimatedHeader.js" />
     <Content Include="Scripts\cbpAnimatedHeader.min.js" />
     <Content Include="Scripts\classie.js" />
+    <Content Include="Scripts\classie.min.js" />
     <Content Include="Scripts\contact_me.js" />
     <Content Include="Scripts\jquery-1.6.3-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.3.js" />

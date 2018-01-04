@@ -8,7 +8,6 @@
 - Pages with duplicate meta descriptions
 _____________________________________________________________________________________
 - add recapcha
-- menu has no background after refresh in "no home" pages (use homepage scroll effect for all).
 - Loading on Homepage is dangerous. some content may not load.
 - sitemap module not working
 - rewriterules module not working
