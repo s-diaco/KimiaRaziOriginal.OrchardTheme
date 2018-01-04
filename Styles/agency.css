@@ -189,11 +189,11 @@ h1, h2, h3, h4, h5, h6 {
             border-radius: 3px;
         }
 
-        .animated-header-scroll {
+        .animated-header.animated-header-scroll {
             background-color: #037a00;
             padding: 10px 0;
         }
-            .animated-header-scroll .navbar-brand {
+            .animated-header.animated-header-scroll .navbar-brand {
                 font-size: 1.5em;
             }
 
@@ -203,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.animated-header-scroll {
+.animated-header.animated-header-scroll {
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
