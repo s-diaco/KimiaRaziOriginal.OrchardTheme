@@ -2,13 +2,12 @@
 - auto generate robots.txt or sitemap.xml
 - write tests (orchard has inbuild tests alredy?)
 - use orchard warmup.
-- Home Links in the first page are relative.
 - Add Alt tag to all images
 - enable combinator
 - Pages with duplicate meta descriptions
+- Loading on Homepage is dangerous. some content may not load.
 _____________________________________________________________________________________
 - add recapcha
-- Loading on Homepage is dangerous. some content may not load.
 - sitemap module not working
 - rewriterules module not working
-- header-bg6.jpg returns 404
+- page meta descs should be different
