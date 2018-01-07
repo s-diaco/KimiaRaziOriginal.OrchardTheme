@@ -5,6 +5,6 @@
 - Loading on Homepage is dangerous. some content may not load.
 _____________________________________________________________________________________
 - add recapcha
-- sitemap module not working
 - rewriterules module not working
 - page meta descs should be different (Pages with duplicate meta descriptions)
+- redirect kimiarazi to www.kimiarazi
