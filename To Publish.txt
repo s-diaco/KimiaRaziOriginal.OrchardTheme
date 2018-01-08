@@ -5,7 +5,7 @@
 4- Copy Media/Default
 5- Copy Web.config (Orchard.web)
 
-Modules: WebAdvanced.Sitemap(update .net version), Piedone.HelpfulLibraries(dev branch), Piedone.Combinator(dev branch), Diaco.KimiaRazi?, M33.Layout, SH.Robots
+Modules: WebAdvanced.Sitemap(update .net version), Piedone.HelpfulLibraries(dev branch), Piedone.Combinator(dev branch), Diaco.KimiaRazi, M33.Layout, SH.Robots
 
 Rewrite rules
 RewriteRule ^/Home/About$ /en-US/Home/History [R=301,L]
@@ -26,4 +26,28 @@ RewriteRule /fa/Home/Glazes$ /fa-IR/Home/لعاب‌-آماده [R=301,L]
 RewriteRule /fa/Home/Powders$ /fa-IR/Home/پودر-چاپ [R=301,L]
 RewriteRule /fa/Home/SpecialGlazes$ /fa-IR/لعاب-های-ویژه [R=301,L]
 RewriteRule /fa/Home/ThirdFiring$ /fa-IR/Home/پخت-سوم [R=301,L]
+RewriteRule /en/Home/About$ /en-US/Home/History [R=301,L]
+RewriteRule /en/Home/Contact$ /en-US/Home/Contact [R=301,L]
+RewriteRule /en/Home/Services$ /en-US/Home/Services [R=301,L]
+RewriteRule /en/Home/Frits$ /en-US/Home/Frits [R=301,L]
+RewriteRule /en/Home/Glazes$ /en-Us/Home/Glazes [R=301,L]
+RewriteRule /en/Home/Powders$ /en-US/Home/Powders [R=301,L]
+RewriteRule /en/Home/SpecialGlazes$ /en-Us/Home/Special-Glazes [R=301,L]
+RewriteRule /en/Home/ThirdFiring$ /en-US/Home/Third-Firing [R=301,L]
+RewriteRule /en/Home/DigitalPrinting$ /en-US/Home/Digital-Printing [R=301,L]
+RewriteRule ^/Home/ProductDetail/1$ /en-US/Home/Frit/Opaque [R=301,L]
+RewriteRule ^/Home/ProductDetail/2$ /en-US/Home/Frit/Matt [R=301,L]
+RewriteRule ^/Home/ProductDetail/3$ /en-US/Home/Frit/Transparent [R=301,L]
+RewriteRule ^/Home/ProductDetail/4$ /en-US/Home/Frit/Engob [R=301,L]
+RewriteRule /fa/Home/ProductDetail/1$ /fa-IR/Home/فریت/اپک [R=301,L]
+RewriteRule /fa/Home/ProductDetail/2$ /fa-IR/Home/فریت/مات [R=301,L]
+RewriteRule /fa/Home/ProductDetail/3$ /fa-IR/Home/فریت/ترانسپارنت [R=301,L]
+RewriteRule /fa/Home/ProductDetail/4$ /fa-IR/Home/فریت/انگوب [R=301,L]
+RewriteRule /en/Home/ProductDetail/1$ /en-US/Home/Frit/Opaque [R=301,L]
+RewriteRule /en/Home/ProductDetail/2$ /en-US/Home/Frit/Matt [R=301,L]
+RewriteRule /en/Home/ProductDetail/3$ /en-US/Home/Frit/Transparent [R=301,L]
+RewriteRule /en/Home/ProductDetail/4$ /en-US/Home/Frit/Engob [R=301,L]
+Rewriterule ^/fa$ /fa-IR/Home/Index [R=301,L]
+Rewriterule ^/en$ / [R=301,L]
+Rewriterule /downloads/kimiarazi_color_specification_table.pdf /Media/Default/Documents/kimiarazi_color_specification_table.pdf [R=301,L]
 RewriteRule /Home/Test$ /en-US/Home/Test [R=301,L]
