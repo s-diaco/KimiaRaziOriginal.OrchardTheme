@@ -1,10 +1,8 @@
-- auto generate robots.txt or sitemap.xml
 - write tests (orchard has inbuild tests alredy?)
 - use orchard warmup.
 - Add Alt tag to all images
 - Loading on Homepage is dangerous. some content may not load.
 _____________________________________________________________________________________
 - add recapcha
-- rewriterules module not working
 - page meta descs should be different (Pages with duplicate meta descriptions)
 - redirect kimiarazi to www.kimiarazi
