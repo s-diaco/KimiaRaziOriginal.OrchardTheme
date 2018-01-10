@@ -4,4 +4,4 @@
 3- Copy Moduloes *Not Needed anymore
 4- Copy Media/Default
 
-Modules: WebAdvanced.Sitemap(update .net version - there is a pull request for it.), Piedone.HelpfulLibraries(dev branch), Piedone.Combinator(dev branch), Diaco.KimiaRazi, M33.Layout, SH.Robots, Contrib.Rewriterules (Update dotnet version)
+Modules: WebAdvanced.Sitemap(update .net version - there is a pull request for it.), Piedone.HelpfulLibraries(dev branch), Piedone.Combinator(dev branch), Diaco.KimiaRazi, M33.Layout, SH.Robots, Contrib.Rewriterules (Update dotnet version, not fully working) and/or Custom Alias 1.1
