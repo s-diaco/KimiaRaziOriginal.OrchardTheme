@@ -1,7 +1,6 @@
-﻿1- build precompiled
-2- Copy app_data
-2.1 - Remove app_data/dependencies?
-3- Copy Moduloes *Not Needed anymore
-4- Copy Media/Default
+﻿1- build precompiled or build
+2- Copy app_data (if needed)
+3- Copy Moduloes (if neccessary)
+4- Copy Media/Default (if neccessary)
 
-Modules: WebAdvanced.Sitemap(update .net version - there is a pull request for it.), Piedone.HelpfulLibraries(dev branch), Piedone.Combinator(dev branch), Diaco.KimiaRazi, M33.Layout, SH.Robots, Contrib.Rewriterules (Update dotnet version, not fully working) and/or Custom Alias 1.1
+Modules: WebAdvanced.Sitemap(update .net version - there is a pull request for it.), Piedone.HelpfulLibraries(newest branch), Piedone.Combinator(newest branch), Diaco.KimiaRazi, M33.Layout, SH.Robots, Contrib.Rewriterules (get new from github, not fully working) and/or Custom Alias 1.1
